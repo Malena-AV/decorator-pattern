@@ -8,6 +8,10 @@ namespace DecoratorLibrary
 {
     public class Decaf: Beverage
     {
+        public Decaf()
+        {
+            description = "Без кофеина";
+        }
         public override double Cost()
         {
             return 100 + sum;

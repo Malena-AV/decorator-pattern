@@ -8,10 +8,14 @@ namespace DecoratorLibrary
 {
     public class DarkRoast: Beverage
     {
-        double darkroast = 50;
+        public DarkRoast()
+        {
+            description = "Тёмный кофе";
+
+        }
         public override double Cost()
         {
-            return darkroast + sum;
+            return 50 + sum;
         }
     }
 }

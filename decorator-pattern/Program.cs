@@ -21,10 +21,10 @@ namespace decorator_pattern
             espresso.Soy();
             darkroast.Whip();
             houseblend.Milk();
-            Console.WriteLine("Стоимость: " + decar.Cost());
-            Console.WriteLine("Стоимость: " + espresso.Cost());
-            Console.WriteLine("Стоимость: " + darkroast.Cost());
-            Console.WriteLine("Стоимость: " + houseblend.Cost());
+            Console.WriteLine(decar.Description + " "+ "стоимость: " + decar.Cost());
+            Console.WriteLine(espresso.Description + " " + "стоимость: " + espresso.Cost());
+            Console.WriteLine(darkroast.Description + " " + "стоимость: " + darkroast.Cost());
+            Console.WriteLine(houseblend.Description + " " + "стоимость: " + houseblend.Cost());
             Console.ReadKey();
 
 

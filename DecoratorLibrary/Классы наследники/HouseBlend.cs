@@ -8,10 +8,14 @@ namespace DecoratorLibrary
 {
     public  class HouseBlend: Beverage
     {
-        double houseblend = 150;
+        public HouseBlend()
+        {
+            description = "Свежеобжаренный кофе";
+        }
         public override double Cost()
         {
-            return houseblend + sum;
+            return 150 + sum;
         }
+       
     }
 }

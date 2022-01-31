@@ -8,10 +8,15 @@ namespace DecoratorLibrary
 {
     public class Espresso: Beverage
     {
-        double expresso = 200;
+        public Espresso()
+        {
+            description = "Итальянское «espresso»";
+        }
+
         public override double Cost()
         {
-            return expresso + sum;
+            return 200 + sum;
         }
+
     }
 }
