@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DecoratorLibrary\DecoratorLibrary.csproj">
+      <Project>{827FB415-52C5-4AAD-B3CE-84488BB7D1EC}</Project>
+      <Name>DecoratorLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
