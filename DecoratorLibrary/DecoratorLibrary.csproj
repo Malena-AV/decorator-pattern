@@ -42,10 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Beverage.cs" />
-    <Compile Include="DarkRoast.cs" />
-    <Compile Include="Decaf.cs" />
-    <Compile Include="Espresso.cs" />
-    <Compile Include="HouseBlend.cs" />
+    <Compile Include="Классы наследники\DarkRoast.cs" />
+    <Compile Include="Классы наследники\Decaf.cs" />
+    <Compile Include="Классы наследники\Espresso.cs" />
+    <Compile Include="Классы наследники\HouseBlend.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
