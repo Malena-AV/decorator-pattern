@@ -12,18 +12,22 @@ namespace decorator_pattern
         static void Main(string[] args)
         {
             Beverage decar = new Decaf();
-            Beverage espresso = new Espresso();
-            Beverage darkroast = new DarkRoast();
-            Beverage houseblend = new HouseBlend();
 
-            decar.Mocha();
-            espresso.Milk();
-            espresso.Soy();
-            darkroast.Whip();
-            houseblend.Milk();
             Console.WriteLine(decar.Description + " "+ "стоимость: " + decar.Cost());
+            
+            Beverage espresso = new Espresso();
+            espresso = new Mocha(espresso);
+            
             Console.WriteLine(espresso.Description + " " + "стоимость: " + espresso.Cost());
+
+            Beverage darkroast = new DarkRoast();
+            darkroast = new Milk(darkroast);
+            darkroast = new Soy(darkroast);
             Console.WriteLine(darkroast.Description + " " + "стоимость: " + darkroast.Cost());
+
+            Beverage houseblend = new HouseBlend();
+            houseblend = new Whip(houseblend);
+            houseblend = new Whip(houseblend);
             Console.WriteLine(houseblend.Description + " " + "стоимость: " + houseblend.Cost());
             Console.ReadKey();
 

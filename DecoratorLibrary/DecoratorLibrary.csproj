@@ -42,6 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Beverage.cs" />
+    <Compile Include="Декораторы\Milk.cs" />
+    <Compile Include="Декораторы\Mocha.cs" />
+    <Compile Include="Декораторы\Soy.cs" />
+    <Compile Include="Декораторы\Whip.cs" />
+    <Compile Include="Классы наследники\CondimentDecorator.cs" />
     <Compile Include="Классы наследники\DarkRoast.cs" />
     <Compile Include="Классы наследники\Decaf.cs" />
     <Compile Include="Классы наследники\Espresso.cs" />

@@ -15,7 +15,7 @@ namespace DecoratorLibrary
 
         public override double Cost()
         {
-            return 200 + sum;
+            return 200;
         }
 
     }
