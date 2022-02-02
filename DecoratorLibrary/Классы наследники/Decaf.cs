@@ -10,11 +10,11 @@ namespace DecoratorLibrary
     {
         public Decaf()
         {
-            description = "Без кофеина";
+            description = "Без кофеина\n";
         }
         public override double Cost()
         {
-            return 100 + sum;
+            return base.Cost() + 100;
         }
     }
 }

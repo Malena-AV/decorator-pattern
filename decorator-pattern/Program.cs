@@ -16,15 +16,17 @@ namespace decorator_pattern
             Beverage darkroast = new DarkRoast();
             Beverage houseblend = new HouseBlend();
 
-            decar.Mocha();
-            espresso.Milk();
-            espresso.Soy();
-            darkroast.Whip();
-            houseblend.Milk();
-            Console.WriteLine(decar.Description + " "+ "стоимость: " + decar.Cost());
-            Console.WriteLine(espresso.Description + " " + "стоимость: " + espresso.Cost());
-            Console.WriteLine(darkroast.Description + " " + "стоимость: " + darkroast.Cost());
-            Console.WriteLine(houseblend.Description + " " + "стоимость: " + houseblend.Cost());
+            decar.Mocha(1);
+            Console.WriteLine(decar.Description() + "стоимость: " + decar.Cost() + "\n");
+
+            espresso.Whip(2);
+            espresso.Milk(5);
+            Console.WriteLine(espresso.Description() + "стоимость: " + espresso.Cost() + "\n");
+           
+            darkroast.Soy(2);
+            Console.WriteLine(darkroast.Description() + "стоимость: " + darkroast.Cost() + "\n");
+           
+            Console.WriteLine(houseblend.Description() +  "стоимость: " + houseblend.Cost() + "\n");
             Console.ReadKey();
 
 

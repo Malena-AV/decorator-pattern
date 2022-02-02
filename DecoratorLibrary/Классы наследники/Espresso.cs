@@ -10,12 +10,12 @@ namespace DecoratorLibrary
     {
         public Espresso()
         {
-            description = "Итальянское «espresso»";
+            description = "Итальянское «espresso»\n";
         }
 
         public override double Cost()
         {
-            return 200 + sum;
+            return base.Cost() + 150;
         }
 
     }

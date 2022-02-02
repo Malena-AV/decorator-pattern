@@ -10,12 +10,12 @@ namespace DecoratorLibrary
     {
         public HouseBlend()
         {
-            description = "Свежеобжаренный кофе";
+            description = "Свежеобжаренный кофе\n";
         }
         public override double Cost()
         {
-            return 150 + sum;
+            return base.Cost() + 200;
         }
-       
+
     }
 }
