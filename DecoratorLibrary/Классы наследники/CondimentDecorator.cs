@@ -8,6 +8,6 @@ namespace DecoratorLibrary.Классы_наследники
 {
     public abstract class CondimentDecorator: Beverage
     {
-        public abstract string Description();
+        public abstract override string GetDescription(); 
     }
 }

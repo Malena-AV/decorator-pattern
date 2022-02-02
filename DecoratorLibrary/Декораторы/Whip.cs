@@ -18,9 +18,9 @@ namespace DecoratorLibrary
         {
             return 3.9 + beverage.Cost();
         }
-        public override string Description()
+        public override string GetDescription()
         {
-           return beverage.Description + "Whip";
+           return beverage.GetDescription() + "\nWhip";
         }
     }
 }
