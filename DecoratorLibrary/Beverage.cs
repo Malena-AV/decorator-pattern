@@ -25,27 +25,23 @@ namespace DecoratorLibrary
         }
         public double Milk(int n)
         {
-            milk *=  n;
-            description += "milk: " + milk + "\n";
-            return milk;
+            description += "milk: " + milk*n + "\n";
+            return milk*n;
         }
         public double Soy(int n)
         {
-            soy *= n;
-            description += "soy: " + soy + "\n";
-            return soy;
+            description += "soy: " + soy*n + "\n";
+            return soy*n;
         }
         public double Mocha(int n)
         {
-            mocha *= n;
-            description += "mocha: " + mocha + "\n";
-            return mocha;
+            description += "mocha: " + mocha*n + "\n";
+            return mocha*n;
         }
         public double Whip(int n)
         {
-            whip *= n;
-            description += "whip: " + whip + "\n";
-            return whip;
+            description += "whip: " + whip*n + "\n";
+            return whip*n;
         }
 
     }   

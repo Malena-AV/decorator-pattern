@@ -21,6 +21,9 @@ namespace decorator_pattern
 
             espresso.Whip(2);
             espresso.Milk(5);
+
+            espresso.Milk(4);
+
             Console.WriteLine(espresso.Description() + "стоимость: " + espresso.Cost() + "\n");
            
             darkroast.Soy(2);
