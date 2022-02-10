@@ -10,7 +10,7 @@ namespace DecoratorLibrary
     {
         public Decaf()
         {
-            Description = "Без кофеина";
+            description = "Без кофеина";
         }
         public override double Cost()
         {

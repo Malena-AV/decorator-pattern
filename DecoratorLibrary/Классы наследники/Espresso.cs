@@ -10,7 +10,7 @@ namespace DecoratorLibrary
     {
         public Espresso()
         {
-            Description = "Итальянское «espresso»";
+            description = "Итальянское «espresso»";
         }
 
         public override double Cost()

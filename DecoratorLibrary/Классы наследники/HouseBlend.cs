@@ -10,7 +10,7 @@ namespace DecoratorLibrary
     {
         public HouseBlend()
         {
-            Description = "Свежеобжаренный кофе";
+            description = "Свежеобжаренный кофе";
         }
         public override double Cost()
         {

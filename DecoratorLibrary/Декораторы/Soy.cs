@@ -9,18 +9,19 @@ namespace DecoratorLibrary
 {
     public class Soy: CondimentDecorator
     {
-        Beverage beverage;
+        readonly Beverage beverage;
+        readonly double cost = 2.0;
         public Soy(Beverage beverage)
         {
             this.beverage = beverage;
         }
         public override double Cost()
         {
-            return 2.0 + beverage.Cost();
+            return cost + beverage.Cost();
         }
         public override string GetDescription()
         {
-            return beverage.GetDescription() + "\nSoy";
+            return beverage.GetDescription() + "\nSoy " + cost;
         }
     }
 }

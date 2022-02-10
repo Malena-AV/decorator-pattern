@@ -10,7 +10,7 @@ namespace DecoratorLibrary
     {
         public DarkRoast()
         {
-            Description = "Тёмный кофе";
+            description = "Тёмный кофе";
         }
         public override double Cost()
         {

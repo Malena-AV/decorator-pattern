@@ -9,18 +9,19 @@ namespace DecoratorLibrary
 {
     public class Mocha: CondimentDecorator
     {
-        Beverage beverage;
+        readonly Beverage beverage;
+        readonly double cost = 5.1;
         public Mocha (Beverage beverage)
         {
             this.beverage = beverage;
         }
         public override double Cost()
         {
-            return 5.1 + beverage.Cost() ;
+            return cost + beverage.Cost() ;
         }
         public override string GetDescription()
         {
-            return this.beverage.GetDescription() + "\nMocha";
+            return beverage.GetDescription() + "\nMocha " + cost;
         }
     }
 }

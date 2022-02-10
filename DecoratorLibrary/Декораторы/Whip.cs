@@ -9,18 +9,19 @@ namespace DecoratorLibrary
 {
     public class Whip : CondimentDecorator
     {
-        Beverage beverage;
+        readonly Beverage beverage;
+        readonly double cost = 3.9;
         public Whip(Beverage beverage)
         {
             this.beverage = beverage;
         }
         public override double Cost()
         {
-            return 3.9 + beverage.Cost();
+            return cost + beverage.Cost();
         }
         public override string GetDescription()
         {
-           return beverage.GetDescription() + "\nWhip";
+           return beverage.GetDescription() + "\nWhip " + cost;
         }
     }
 }
