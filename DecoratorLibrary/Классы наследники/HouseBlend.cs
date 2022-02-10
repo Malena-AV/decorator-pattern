@@ -16,6 +16,5 @@ namespace DecoratorLibrary
         {
             return 150;
         }
-       
     }
 }

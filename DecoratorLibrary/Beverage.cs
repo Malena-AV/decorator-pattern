@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DecoratorLibrary
 {
-    abstract public class Beverage
+    public abstract class Beverage
     {
         public string Description { get; set; }
         public abstract double Cost();
@@ -14,5 +14,6 @@ namespace DecoratorLibrary
         {
             return Description;
         }
+
     }   
 }
