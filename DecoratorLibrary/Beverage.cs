@@ -10,10 +10,15 @@ namespace DecoratorLibrary
     {
 
         public string description;
-        double milk = 14.1;
-        double soy = 27.1;
-        double mocha = 16.9;
-        double whip = 35.1;
+        double milk;
+        double soy;
+        double mocha;
+        double whip;
+
+        double pricemilk = 14.1;
+        double pricesoy = 27.1;
+        double pricemocha = 16.9;
+        double pricewhip = 35.1;
 
         public virtual double Cost()
         {
@@ -23,25 +28,26 @@ namespace DecoratorLibrary
         {
             return description;
         }
-        public double Milk(int n)
+        public void Milk(int n)
         {
-            description += "milk: " + milk*n + "\n";
-            return milk*n;
+            milk= pricemilk*n;
+            description += "Milk = " + milk + "\n";
         }
-        public double Soy(int n)
+        public void Soy(int n)
         {
-            description += "soy: " + soy*n + "\n";
-            return soy*n;
+            soy = pricesoy*n;
+            description += "Soy = " + soy + "\n";
         }
-        public double Mocha(int n)
+        public void Mocha(int n)
         {
-            description += "mocha: " + mocha*n + "\n";
-            return mocha*n;
+            mocha = pricemocha*n;
+            description += "Mocha = " + mocha + "\n";
         }
-        public double Whip(int n)
+        public void Whip(int n)
         {
-            description += "whip: " + whip*n + "\n";
-            return whip*n;
+           whip = pricewhip*n;
+           description += "Whip = " + whip + "\n";
+
         }
 
     }   
