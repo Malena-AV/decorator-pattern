@@ -29,6 +29,7 @@ namespace decorator_pattern
             Console.WriteLine(darkroast.Description() + "стоимость: " + darkroast.Cost() + "\n");
            
             Console.WriteLine(houseblend.Description() +  "стоимость: " + houseblend.Cost() + "\n");
+
             Console.ReadKey();
 
 
