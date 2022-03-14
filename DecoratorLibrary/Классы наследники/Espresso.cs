@@ -12,7 +12,6 @@ namespace DecoratorLibrary
         {
             description = "Итальянское «espresso»";
         }
-
         public override double Cost()
         {
             return 200;

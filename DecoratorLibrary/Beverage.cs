@@ -9,14 +9,10 @@ namespace DecoratorLibrary
     public abstract class Beverage
     {
         public string description;
-        public string Description()
-        {
-            return description;
-        }
         public abstract double Cost();
         public virtual string GetDescription()
         {
-            return Description();
+            return description + " " + Cost();
         }
 
     }   
